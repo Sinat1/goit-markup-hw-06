@@ -513,7 +513,6 @@ footer {
 
 .footer-columns {
   display: flex;
-  flex-wrap: wrap;
   align-items: baseline;
 }
 
@@ -595,11 +594,12 @@ footer {
 }
 
 .mailing-list {
-  margin-left: 93px;
-  position: relative;
+  margin-left: auto;
+  display: flex;
 }
 
 .mailing-list-title {
+  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -609,9 +609,8 @@ footer {
 }
 
 .mailing-list-email {
-  position: absolute;
-  top: 36px;
-  left: 0;
+  display: block;
+  margin-top: 20px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -640,12 +639,11 @@ footer {
 }
 
 .mailing-list-button {
-  position: absolute;
   display: flex;
+  align-self: flex-end;
+  margin-left: 12px;
   justify-content: center;
   align-items: center;
-  top: 36px;
-  left: 370px;
   width: 200px;
   height: 50px;
 
@@ -700,6 +698,7 @@ footer {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 0 40px;
   min-width: 528px;
   min-height: 581px;
   transform: translate(-50%, -50%) scale(1);
@@ -718,7 +717,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 8px;
+  margin: 8px 8px 0 2px;
   padding: 0;
 
   border: none;
@@ -734,11 +733,6 @@ footer {
 .icon-close:hover,
 .icon-close:focus {
   fill: var(--accent-color);
-}
-
-.modal-container {
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 .modal-title {
